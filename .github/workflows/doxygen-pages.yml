@@ -11,13 +11,13 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      # - name: Delete branch
-      #   uses: dawidd6/action-delete-branch@v3
-      #   with:
-      #     github_token: ${{github.token}}
-      #     branches: gh-pages
-      #   # if the branch exists, delete it
-      #   if: ${{ github.ref == 'refs/heads/gh-pages' }}
+      - name: Delete branch
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          github_token: ${{github.token}}
+          branches: gh-pages
+        # if the branch exists, delete it
+        if: ${{ github.ref == 'refs/heads/gh-pages' }}
 
       - uses: actions/checkout@v3
         with:
