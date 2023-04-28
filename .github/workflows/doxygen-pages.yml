@@ -18,6 +18,7 @@ jobs:
           branches: gh-pages
         # if the branch exists, delete it
         if: ${{ github.ref == 'refs/heads/gh-pages' }}
+
       - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
@@ -26,6 +27,14 @@ jobs:
         uses: mattnotmitt/doxygen-action@v1.9.5
         with:
             working-directory: 'docs/'
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.110.0'
+
+      - name: Build
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
