@@ -17,12 +17,25 @@ jobs:
           SRC_FOLDER_PATH: 'docs'
           TARGET_BRANCH: 'gh-pages'
         run: |
-          find docs -type f -exec cp --parents {} . \;
+          files=$(find $SRC_FOLDER_PATH -type f) # get the file list
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git fetch                         # fetch branches
           git checkout $TARGET_BRANCH       # checkout to your branch
-          git checkout ${GITHUB_REF##*/} -- # copy files from the source branch
+          git checkout ${GITHUB_REF##*/} -- $files # copy files from the source branch
+          git add -A
+          git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
+          git push origin $TARGET_BRANCH # push to remote branch
+      - name: dir
+        env:
+          TARGET_BRANCH: 'gh-pages'
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git fetch                         # fetch branches
+          git checkout $TARGET_BRANCH       # checkout to your branch
+          git mv docs/* .
+          git rm -r docs/
           git add -A
           git diff-index --quiet HEAD ||  git commit -am "deploy files"  # commit to the repository (ignore if no modification)
           git push origin $TARGET_BRANCH # push to remote branch
