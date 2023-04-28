@@ -16,6 +16,8 @@ jobs:
         with:
           github_token: ${{github.token}}
           branches: gh-pages
+        # if the branch exists, delete it
+        if: ${{ github.ref == 'refs/heads/gh-pages' }}
       - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
