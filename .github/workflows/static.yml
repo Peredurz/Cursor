@@ -2,12 +2,9 @@
 name: Deploy static content to Pages
 
 on:
-  workflow_run:
-    workflows: ["Doxygen to GitHub Pages"]
-    types:
-      - completed
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  push:
+    branches:
+      - gh-pages
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
