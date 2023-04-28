@@ -1,4 +1,4 @@
-﻿public class Program
+﻿﻿public class Program
 {
     const int length = 5;
     const int width = 5;
@@ -69,7 +69,6 @@
         while (keyinfo.Key != ConsoleKey.X);
 
         Console.ReadKey();
-        Credit(
     }
     // Default action of all the options. You can create more methods
     static void WriteTemporaryMessage(string message)
