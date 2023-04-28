@@ -28,7 +28,7 @@ jobs:
       - name: Run Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.9.5
         with:
-            working-directory: 'docs/'
+            working-directory: './'
             config-file: 'Doxyfile'
 
       - name: Deploy
