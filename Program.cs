@@ -92,6 +92,7 @@
     /// <code>
     ///     string[,] options = new string[2, 2] { { "a ", "b " }, { "c ", "d " } };
     ///     WriteMenu(options, options[0, 0]);
+    ///     Console.ReadKey();
     ///</code>
     ///</example>
     ///</remarks>
