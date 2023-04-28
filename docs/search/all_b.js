@@ -11,7 +11,5 @@ var searchData=
   ['presentationname_8',['PresentationName',['../class_presentation_model.html#a4b38f730784e41ca318e17be6dbba3ee',1,'PresentationModel']]],
   ['price_9',['Price',['../class_chair_model.html#ad3e57c40e44690d6c54de7ff038839e3',1,'ChairModel']]],
   ['printchairs_10',['PrintChairs',['../class_auditorium.html#a6b1aba1fc6371aa8e8b52e8beaec11b1',1,'Auditorium']]],
-  ['program_2ecs_11',['Program.cs',['../_program_8cs.html',1,'']]],
-  ['project_2eassemblyinfo_2ecs_12',['Project.AssemblyInfo.cs',['../_project_8_assembly_info_8cs.html',1,'']]],
-  ['project_2eglobalusings_2eg_2ecs_13',['Project.GlobalUsings.g.cs',['../_project_8_global_usings_8g_8cs.html',1,'']]]
+  ['program_2ecs_11',['Program.cs',['../_program_8cs.html',1,'']]]
 ];
