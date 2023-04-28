@@ -1,0 +1,16 @@
+E:\Cursor\bin\Debug\net6.0\Cursor.deps.json
+E:\Cursor\bin\Debug\net6.0\Cursor.dll
+E:\Cursor\bin\Debug\net6.0\Cursor.pdb
+E:\Cursor\obj\Debug\net6.0\Cursor.csproj.AssemblyReference.cache
+E:\Cursor\obj\Debug\net6.0\Cursor.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cursor\obj\Debug\net6.0\Cursor.AssemblyInfoInputs.cache
+E:\Cursor\obj\Debug\net6.0\Cursor.AssemblyInfo.cs
+E:\Cursor\obj\Debug\net6.0\Cursor.csproj.CoreCompileInputs.cache
+E:\Cursor\obj\Debug\net6.0\Cursor.dll
+E:\Cursor\obj\Debug\net6.0\refint\Cursor.dll
+E:\Cursor\obj\Debug\net6.0\Cursor.pdb
+E:\Cursor\obj\Debug\net6.0\ref\Cursor.dll
+E:\Cursor\bin\Debug\net6.0\Cursor.exe
+E:\Cursor\bin\Debug\net6.0\Cursor.runtimeconfig.json
+E:\Cursor\bin\Debug\net6.0\doc.xml
+E:\Cursor\obj\Debug\net6.0\Cursor.genruntimeconfig.cache
