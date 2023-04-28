@@ -11,30 +11,25 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Delete branch
-        uses: dawidd6/action-delete-branch@v3
-        with:
-          github_token: ${{github.token}}
-          branches: gh-pages
-        # if the branch exists, delete it
-        if: ${{ github.ref == 'refs/heads/gh-pages' }}
+      # - name: Delete branch
+      #   uses: dawidd6/action-delete-branch@v3
+      #   with:
+      #     github_token: ${{github.token}}
+      #     branches: gh-pages
+      #   # if the branch exists, delete it
+      #   if: ${{ github.ref == 'refs/heads/gh-pages' }}
 
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          # If you're changing the branch from master,
+          # also change the `master` in `refs/heads/master`
+          # below accordingly.
+          ref: gh-pages
       - name: Run Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.9.5
         with:
             working-directory: 'docs/'
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.110.0'
-
-      - name: Build
-        run: hugo --minify
+            config-file: 'Doxyfile'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -45,3 +40,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+          keep_files: true
