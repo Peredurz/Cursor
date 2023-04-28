@@ -21,7 +21,5 @@ var searchData=
   ['color_18',['Color',['../class_chair_model.html#a4baad2ab1150146c0e9d28ae7a3cf871',1,'ChairModel']]],
   ['column_19',['Column',['../class_chair_model.html#abcccad2df08ac3aaf1af558beb386853',1,'ChairModel']]],
   ['currentaccount_20',['CurrentAccount',['../class_accounts_logic.html#a3c2e5a7c894fdb94c61f9f3ebd19bbf2',1,'AccountsLogic']]],
-  ['currentpresentation_21',['CurrentPresentation',['../class_presentation_logic.html#a9f9ec7455a2f5c2e2552575761974cfe',1,'PresentationLogic']]],
-  ['cursor_2eassemblyinfo_2ecs_22',['Cursor.AssemblyInfo.cs',['../_cursor_8_assembly_info_8cs.html',1,'']]],
-  ['cursor_2eglobalusings_2eg_2ecs_23',['Cursor.GlobalUsings.g.cs',['../_cursor_8_global_usings_8g_8cs.html',1,'']]]
+  ['currentpresentation_21',['CurrentPresentation',['../class_presentation_logic.html#a9f9ec7455a2f5c2e2552575761974cfe',1,'PresentationLogic']]]
 ];
